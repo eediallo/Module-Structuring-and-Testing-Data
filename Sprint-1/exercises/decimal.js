@@ -7,8 +7,8 @@ const wholeNumberPart = Math.floor(num);
 console.log("whole number part", wholeNumberPart);
 // Create a variable called decimalPart and assign to it an expression that evaluates to 0.4567 ( the decimal part of num )
 const decimalPart = num - wholeNumberPart;
-console.log("decimal part = ",decimalPart);
+console.log("decimal part = ", decimalPart);
 // Create a variable called roundedNum and assign to it an expression that evaluates to 57 ( num rounded to the nearest whole number )
 const roundedNum = Math.ceil(num);
-console.log("rounded number = ",roundedNum);
+console.log("rounded number = ", roundedNum);
 // Log your variables to the console to check your answers
