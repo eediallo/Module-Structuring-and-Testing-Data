@@ -4,9 +4,10 @@ const num = 56.4567;
 
 // Create a variable called wholeNumberPart and assign to it an expression that evaluates to 56 ( the whole number part of num )
 const wholeNumberPart = Math.floor(num);
-console.log(wholeNumberPart);
+console.log("whole number part", wholeNumberPart);
 // Create a variable called decimalPart and assign to it an expression that evaluates to 0.4567 ( the decimal part of num )
-
+const decimalPart = num - wholeNumberPart;
+console.log("decimal part = ",decimalPart);
 // Create a variable called roundedNum and assign to it an expression that evaluates to 57 ( num rounded to the nearest whole number )
 
 // Log your variables to the console to check your answers
