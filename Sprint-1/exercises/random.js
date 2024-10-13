@@ -25,4 +25,3 @@ const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 
 Conclusion: The expression above generates a random number in this interval [1, 100]
 */
-console.log(Math.ceil(5.4))
