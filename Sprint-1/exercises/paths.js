@@ -1,3 +1,5 @@
+const path = require('path')
+
 // The diagram below shows the different names for parts of a file path on a Unix operating system
 
 // ┌─────────────────────┬────────────┐
@@ -15,4 +17,6 @@ const base = filePath.slice(lastSlashIndex + 1);
 console.log(`The base part of ${filePath} is ${base}`);
 
 // Create a variable to store the dir part of the filePath variable
+const dirPart = path.dirname(filePath)
+console.log(dirPart)
 // Create a variable to store the ext part of the variable
