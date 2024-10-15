@@ -18,3 +18,15 @@ const cardNumber = 4533787178994213;
 const carNumberStr = String(cardNumber)
 const last4Digits = carNumberStr.slice(carNumberStr.length- 4);
 console.log(last4Digits)
+
+// Another way of solving this is:
+//1.convert carNumberStr into an array
+// 2.Get last 4 digits array using the slice method
+// 3. Convert the last four digits arr into a string
+// 4. Convert i back into a number
+const carNumberArr = carNumberStr.split('')
+const last4DigitsArr = carNumberArr.splice(-4)
+const last4DigitsStr = last4DigitsArr.join('')
+const last4DigitsN = Number(last4Digits)
+console.log(last4DigitsN)
+
