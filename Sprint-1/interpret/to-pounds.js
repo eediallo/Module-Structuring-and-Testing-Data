@@ -28,4 +28,4 @@ console.log(`£${pounds}.${pence}`);
 // 2.const penceStringWithoutTrailingP = penceString.substring(0,penceString.length - 1): removes "p" in the penceString variable // "399"
 // 3. const paddedPenceNumberString = penceStringWithoutTrailingP.padStart(3, "0"): Ensures that penceStringWithoutTrailingP has a least 3 characters.
 // 4. const pounds = paddedPenceNumberString.substring(0,paddedPenceNumberString.length - 2): removes "99" in the paddedPenceNumberString // 3
-
+// 5. const pence = paddedPenceNumberString.substring(paddedPenceNumberString.length - 2).padEnd(2, "0"): Ensure that pence has at least 2 characters
