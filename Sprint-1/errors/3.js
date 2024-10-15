@@ -16,7 +16,8 @@
 // 2. subtracts 4 to the length of cardNumber to be able to extract the last 4 elements since we not dealing with and array
 const cardNumber = 4533787178994213;
 const carNumberStr = String(cardNumber)
-const last4Digits = carNumberStr.slice(carNumberStr.length- 4);
+const last4DigitsString = carNumberStr.slice(carNumberStr.length- 4);
+const last4Digits = Number(last4DigitsString)
 console.log(last4Digits)
 
 // Another way of solving this is:
