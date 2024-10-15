@@ -24,10 +24,13 @@ console.log(last4Digits)
 //1.convert carNumberStr into an array
 // 2.Get last 4 digits array using the slice method
 // 3. Convert the last four digits arr into a string
-// 4. Convert i back into a number
+// 4. Convert it back into a number
 const carNumberArr = carNumberStr.split('')
 const last4DigitsArr = carNumberArr.splice(-4)
 const last4DigitsStr = last4DigitsArr.join('')
-const last4DigitsN = Number(last4Digits)
+const last4DigitsN = Number(last4Digits) // +(last4Digits)
 console.log(last4DigitsN)
+
+
+// we can also instead of using the Number method to convert the last4digits string into a back, use the (+) sign to achieve the same thing
 
