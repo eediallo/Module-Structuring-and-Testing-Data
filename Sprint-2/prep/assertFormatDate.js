@@ -7,10 +7,10 @@
 // )
 
 function formatAs12HourClock(time){
-    return `${time} am`;
+    const isTimeGreaterThan12 = Number(time.slice(0, 2)) > 12 
+    console.log(isTimeGreaterThan12) 
+    return isTimeGreaterThan12 ? `${time.slice(0, 2) - 12}:00 pm` : `${time} am`
 }
-
-
 
 // first assertion
 const currentOutput = formatAs12HourClock("08:00")
