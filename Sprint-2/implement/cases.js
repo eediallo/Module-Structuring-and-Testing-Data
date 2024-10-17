@@ -13,3 +13,19 @@
 
 // You will need to come up with an appropriate name for the function
 // Use the string documentation to help you find a solution
+
+function toUpperSnakeCase(str){
+    let upperSnakeStr = ''
+    for(let i = 0; i < str.length; i++){
+        if (str[i] ===  ' '){
+            upperSnakeStr += "_"
+        } else {
+            upperSnakeStr += str[i]
+        }
+    }
+    return upperSnakeStr.toUpperCase()
+}
+
+// console.log(toUpperSnakeCase('hello there'))
+// console.log(toUpperSnakeCase('Lord of the rings'))
+// console.log(toUpperSnakeCase("It's been a wonderful trip"))
