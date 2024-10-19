@@ -8,7 +8,6 @@ function getOrdinalNumber(number){
     if (lastTwoDigits === "11" || lastTwoDigits === "12" || lastTwoDigits === "13"){
         ordinalNumber += number.toString() + 'th'
     } else {
-
         if (lastDigit ==='1'){
             ordinalNumber += number.toString() + 'st'
         } 
@@ -20,12 +19,16 @@ function getOrdinalNumber(number){
         if (lastDigit ==='3'){
             ordinalNumber += number.toString() + 'rd'
         }
-
-        ordinalNumber += number.toString() + 'th'
-    }
     
+        if (lastDigit !=='1' && (lastDigit !=='2') && (lastDigit !=='3')){
+            ordinalNumber += number.toString() + 'th'
+        } 
+    }
+
+   
+
     return ordinalNumber
 }
 
 
-console.log(getOrdinalNumber(25))
+console.log(getOrdinalNumber(112))
