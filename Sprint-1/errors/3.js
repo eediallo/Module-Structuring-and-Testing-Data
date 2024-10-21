@@ -15,3 +15,7 @@
 const cardNumber = 4533787178994213;
 const last4Digits = +cardNumber.toString().slice(- 4);
 // console.log(last4Digits)
+//explanation
+// 1. cardNumber.toString() => convert cardNumber variable into a string
+// 2. slice(-4) => get last 4 digits of string cardNumber
+// + . convert cardNumber back to a number. ==> I could have use the Number() function to achieve the same
