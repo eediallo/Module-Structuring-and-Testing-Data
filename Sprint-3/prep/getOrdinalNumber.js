@@ -1,34 +1,33 @@
+function getOrdinalNumber(number) {
+  let ordinalNumber = "";
+  const lastDigit = number.toString().slice(-1);
+  const lastTwoDigits = number.toString().slice(-2);
 
-
-function getOrdinalNumber(number){
-    let ordinalNumber = ''
-    const lastDigit = number.toString().slice(-1)
-    const lastTwoDigits = number.toString().slice(-2)
-
-    if (lastTwoDigits === "11" || lastTwoDigits === "12" || lastTwoDigits === "13"){
-        ordinalNumber += number.toString() + 'th'
-    } else {
-        if (lastDigit ==='1'){
-            ordinalNumber += number.toString() + 'st'
-        } 
-        
-        if (lastDigit ==='2'){
-            ordinalNumber += number.toString() + 'nd'
-        } 
-    
-        if (lastDigit ==='3'){
-            ordinalNumber += number.toString() + 'rd'
-        }
-    
-        if (lastDigit !=='1' && (lastDigit !=='2') && (lastDigit !=='3')){
-            ordinalNumber += number.toString() + 'th'
-        } 
+  if (
+    lastTwoDigits === "11" ||
+    lastTwoDigits === "12" ||
+    lastTwoDigits === "13"
+  ) {
+    ordinalNumber += number.toString() + "th";
+  } else {
+    if (lastDigit === "1") {
+      ordinalNumber += number.toString() + "st";
     }
 
-   
+    if (lastDigit === "2") {
+      ordinalNumber += number.toString() + "nd";
+    }
 
-    return ordinalNumber
+    if (lastDigit === "3") {
+      ordinalNumber += number.toString() + "rd";
+    }
+
+    if (lastDigit !== "1" && lastDigit !== "2" && lastDigit !== "3") {
+      ordinalNumber += number.toString() + "th";
+    }
+  }
+
+  return ordinalNumber;
 }
 
-
-console.log(getOrdinalNumber(112))
+console.log(getOrdinalNumber(112));
