@@ -7,14 +7,14 @@ let lastName = "Johnson";
 //const initials = firstName[0] + middleName[0] + lastName[0]
 
 // make first, middle, and last name a string and convert it into an array
-const fullNameToArr = (firstName + " " + middleName + " " + lastName).split(' ')
+const names = [firstName, middleName, lastName]
 
 //to store the initials
 let initials = ''
 
 // get the initial of each item in the array and assign them to initials
-for (let key in fullNameToArr){
-    const value = fullNameToArr[key]
+for (let key in names){
+    const value = names[key]
     initials += value[0]
 }
-console.log(initials)
+// console.log(initials)
