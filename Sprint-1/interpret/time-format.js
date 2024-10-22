@@ -25,6 +25,6 @@ console.log(result);
 
 // e) What do you think the variable result represents? Can you think of a better name for this variable?
     // The variable result formats the date in this format: h:minutes:seconds
-    // Yes, we can give it the name formateDate for example
+    // Yes, we can give it the name formatedTime for example
 
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
